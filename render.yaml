@@ -1,0 +1,17 @@
+services:
+  - type: web
+    name: sgsits-student-registration-api
+    env: node
+    buildCommand: npm install && npm run build
+    startCommand: npm start
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: DB_HOST
+        value: localhost
+      - key: DB_USER
+        value: root
+      - key: DB_PASSWORD
+        value: 
+      - key: DB_NAME
+        value: student_db

@@ -1,0 +1,52 @@
+@import "tailwindcss";
+
+@theme {
+  --color-sgsits: #003366;
+  --color-sgsits-hover: #004488;
+  --font-sans: 'Helvetica Neue', Arial, sans-serif;
+}
+
+@layer base {
+  body {
+    background-color: #fcfcfc;
+    color: #333;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-sgsits text-white px-4 py-2 font-semibold border-none cursor-pointer rounded-sm hover:bg-sgsits-hover transition-colors;
+  }
+  
+  .card {
+    @apply bg-white border border-[#e0e0e0] p-5 rounded-sm shadow-[0_1px_3px_rgba(0,0,0,0.05)];
+  }
+
+  .form-label {
+    @apply block text-xs font-bold mb-1 text-[#555];
+  }
+
+  .form-input {
+    @apply w-full py-1.5 px-2.5 border border-[#ccc] rounded-sm box-border text-[13px] bg-white;
+  }
+
+  .sidebar-link {
+    @apply block py-3 px-5 text-[#444] no-underline border-b border-[#eee] transition-colors hover:bg-[#f0f0f0];
+  }
+
+  .sidebar-link.active {
+    @apply bg-[#eef2f7] border-l-4 border-sgsits font-bold text-sgsits;
+  }
+  
+  .table-custom {
+    @apply w-full border-collapse text-[13px] bg-white;
+  }
+
+  .table-custom th, .table-custom td {
+    @apply border border-[#ddd] p-2.5 text-left;
+  }
+
+  .table-custom th {
+    @apply bg-[#f4f4f4] text-[#555];
+  }
+}

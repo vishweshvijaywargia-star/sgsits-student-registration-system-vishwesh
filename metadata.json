@@ -1,0 +1,6 @@
+{
+  "name": "SGSITS Student Registration System",
+  "description": "Student registration and management portal for SGSITS Indore.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
